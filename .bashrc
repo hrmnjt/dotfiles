@@ -32,6 +32,8 @@ alias l="ls -lhaG"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias src="cd ~/code/src; l"
+alias hugo="~/hugo"
 
 # Git aliases
 alias g="git"
@@ -42,4 +44,3 @@ alias ggpull="git pull origin $GIT_BRANCH"
 alias ggpush="git push origin $GIT_BRANCH"
 alias glo="git log --oneline --decorate"
 alias gst="git status"
-
