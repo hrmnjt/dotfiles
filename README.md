@@ -1,14 +1,22 @@
 # Dotfiles
 
-Welcome to the dotfiles repository. This is evolving everyday with me and is not even close to good at this moment. Please use your discretion while using this. I would be improving this for generic use at a later point of time. Please [mail](mailto:hrmnjt@hrmn.in) me or find me on [twitter](https://twitter.com/hrmnjts) for any constructive criticism or feedback.
+Welcome to the hrmnjt's dotfiles!
 
-
-Setting up (for now, hardcoded):
+### Usage (for now, hard-coded):
 
 ```bash
+# Setting up Git prompt
+ln -sh /path/to/dotfiles/git-prompt.sh ~/.git-prompt.bash
+
+# Setting up Git completion
+ln -sh /path/to/dotfiles/git-completion.bash ~/.git-completion.bash
+```
+
+### References
+Git completion & Git prompt are added from https://github.com/git/git/tree/master/contrib/completion and can be downloaded using the below
+
+```
 curl -OL https://github.com/git/git/raw/master/contrib/completion/git-prompt.sh
-ln -sh /Users/hsingh/code/src/dotfiles/git-prompt.sh ~/.git-prompt.bash
 
 curl -OL https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
-ln -sh /Users/hsingh/code/src/dotfiles/git-completion.bash ~/.git-completion.bash
 ```
