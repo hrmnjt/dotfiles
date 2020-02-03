@@ -2,10 +2,6 @@
 # Prompt
 #########
 
-# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-#     source $HOME/.bash-git-prompt/gitprompt.sh
-# fi
-
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWCOLORHINTS=1
