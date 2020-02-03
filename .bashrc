@@ -2,31 +2,33 @@
 # Prompt
 #########
 
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWUNTRACKEDFILES=1
-GIT_PS1_SHOWCOLORHINTS=1
-GIT_PS1_SHOWUPSTREAM="auto"
-GIT_PS1_DESCRIBE_STYLE="branch"
+# Set Vim as my default editor
+export EDITOR=vim
 
+# Setting the git-prompt __git_ps1
 if [ -f ~/.git-prompt.sh ]; then
   source ~/.git-prompt.sh
-  export PROMPT_COMMAND='__git_ps1 "\w" "\n$ "'
+  export GIT_PS1_SHOWDIRTYSTATE=1
+  export GIT_PS1_SHOWUNTRACKEDFILES=1
+  export GIT_PS1_SHOWCOLORHINTS=1
+  export GIT_PS1_SHOWUPSTREAM="auto"
+  export GIT_PS1_DESCRIBE_STYLE="branch"
 fi
 
-############
-# Completion
-############
+# Colors for prompt
+no_color="\[\033[0m\]"
+red="\[\033[0;31m\]"
+green="\[\033[0;32m\]"
+yellow="\[\033[0;33m\]"
+blue="\[\033[0;34m\]"
 
+# Git completion
 if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 
-#########
-# Options
-#########
-
-# Set Vim as my default editor
-export EDITOR=vim
+# export PROMPT_COMMAND='__git_ps1 "\w" "\n$ "'
+export PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+($yellow`basename $VIRTUAL_ENV`$no_color) }" "$blue\w$no_color \n\$ " "(%s) "'
 
 #########
 # Aliases
@@ -35,9 +37,12 @@ export EDITOR=vim
 # Reloading bash configurations
 alias loadbash="source ~/.bash_profile"
 
-# Easy password
+# Quick password
 alias pass="pbcopy < ~/.pass"
 alias passmaf="pbcopy < ~/.passmaf"
+
+# Quick python environment
+alias pyenv="source ./pyenv/bin/activate"
 
 # Common aliases
 alias q="exit"
