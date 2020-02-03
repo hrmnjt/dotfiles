@@ -28,7 +28,7 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # export PROMPT_COMMAND='__git_ps1 "\w" "\n$ "'
-export PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+($yellow`basename $VIRTUAL_ENV`$no_color) }" "$blue\w$no_color \n\$ " "(%s) "'
+export PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+($yellow`basename $VIRTUAL_ENV`$no_color) }" "\u@\h:$blue\w$no_color \n\$ " "(%s) "'
 
 #########
 # Aliases
