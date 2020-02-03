@@ -6,13 +6,9 @@ Welcome to the dotfiles repository. This is evolving everyday with me and is not
 Setting up (for now, hardcoded):
 
 ```bash
-ln -sf ~/code/src/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/code/src/dotfiles/.bash_profile ~/.bash_profile
+curl -OL https://github.com/git/git/raw/master/contrib/completion/git-prompt.sh
+ln -sh /Users/hsingh/code/src/dotfiles/git-prompt.sh ~/.git-prompt.bash
+
+curl -OL https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
+ln -sh /Users/hsingh/code/src/dotfiles/git-completion.bash ~/.git-completion.bash
 ```
-
-TODO (immediate):
-
-* Add the git prompt information from the https://github.com/magicmonty/bash-git-prompt
-* Add vimrc
-
--Harman
