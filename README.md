@@ -10,6 +10,10 @@ ln -sh /path/to/dotfiles/git-prompt.sh ~/.git-prompt.bash
 
 # Setting up Git completion
 ln -sh /path/to/dotfiles/git-completion.bash ~/.git-completion.bash
+
+# Creating bash run control files
+ln -sh /path/to/dotfiles/.bashrc ~/.bashrc
+ln -sh /path/to/dotfiles/.bash_profile ~/.bash_profile
 ```
 
 ### References
