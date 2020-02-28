@@ -68,5 +68,6 @@ alias glo="git log --oneline --decorate"
 alias gst="git status"
 
 PATH="$HOME/scala/bin/:${PATH}"
+PATH="$HOME/go/bin/:${PATH}"
 PATH="/usr/local/go/bin:${PATH}"
 export PATH
