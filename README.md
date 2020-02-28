@@ -6,14 +6,14 @@ Welcome to the hrmnjt's dotfiles!
 
 ```bash
 # Setting up Git prompt
-ln -sh /path/to/dotfiles/git-prompt.sh ~/.git-prompt.bash
+ln -s -f -v /path/to/dotfiles/git-prompt.sh ~/.git-prompt.sh
 
 # Setting up Git completion
-ln -sh /path/to/dotfiles/git-completion.bash ~/.git-completion.bash
+ln -s -f -v /path/to/dotfiles/git-completion.bash ~/.git-completion.bash
 
 # Creating bash run control files
-ln -sh /path/to/dotfiles/.bashrc ~/.bashrc
-ln -sh /path/to/dotfiles/.bash_profile ~/.bash_profile
+ln -s -f -v /path/to/dotfiles/.bashrc ~/.bashrc
+ln -s -f -v /path/to/dotfiles/.bash_profile ~/.bash_profile
 ```
 
 ### References

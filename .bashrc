@@ -38,7 +38,7 @@ alias loadbash="source ~/.bash_profile"
 
 # Quick password
 # Uncomment this line in ubuntu
-alias pbcopy="clip.exe"
+alias pbcopy="xclip -selection clipboard"
 alias pass="pbcopy < ~/.pass"
 alias passmaf="pbcopy < ~/.passmaf"
 
