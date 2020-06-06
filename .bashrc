@@ -66,5 +66,9 @@ alias ggpush="git push origin $GIT_BRANCH"
 alias glo="git log --oneline --decorate"
 alias gst="git status"
 
+PATH="/usr/local/go/bin:${PATH}"
+PATH="/Users/hsingh/go/bin:${PATH}"
 PATH="$HOME/scala/bin/:${PATH}"
 export PATH
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
