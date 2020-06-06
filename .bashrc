@@ -27,7 +27,6 @@ if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 
-# export PROMPT_COMMAND='__git_ps1 "\w" "\n$ "'
 export PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+($yellow`basename $VIRTUAL_ENV`$no_color) }" "\u@\h:$blue\w$no_color \n\$ " "(%s) "'
 
 #########
@@ -38,6 +37,8 @@ export PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+($yellow`basename $VIRTUAL_ENV`
 alias loadbash="source ~/.bash_profile"
 
 # Quick password
+# Uncomment this line in ubuntu
+alias pbcopy="xclip -selection clipboard"
 alias pass="pbcopy < ~/.pass"
 alias passmaf="pbcopy < ~/.passmaf"
 
@@ -69,6 +70,8 @@ alias gst="git status"
 PATH="/usr/local/go/bin:${PATH}"
 PATH="/Users/hsingh/go/bin:${PATH}"
 PATH="$HOME/scala/bin/:${PATH}"
+PATH="$HOME/go/bin/:${PATH}"
+PATH="/usr/local/go/bin:${PATH}"
 export PATH
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
